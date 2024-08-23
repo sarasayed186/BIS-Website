@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.albums-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/album-cover.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    color: #fff;
+}
+
+.albums-cover p {
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.albums-page {
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.albums-page .section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #294861;
+}
+
+.albums-page .section-title .n-title {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    color: #294861;
+    margin-top: -8px;
+}
+
+.albums-page .section-title .showall-btn,
+.albums-page .load-more-btn,
+.albums-page .filter-btn {
+    color: #fff;
+    background: #294861;
+    border-color: #294861;
+    padding: 7px 20px 8px 20px;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+}
+
+.albums-page .section-title .showall-btn:hover,
+.albums-page .load-more-btn:hover,
+.albums-page .filter-btn:hover {
+    color: #294861;
+    background-color: #fff;
+    border-color: #294861;
+}
+
+.albums-page .load-more-btn {
+    margin-top: 40px;
+}
+
+.albums-page .filter-btn {
+    margin-right: 10px;
+}
+
+.albums-page .dropdown-filter label {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    line-height: 1.5;
+    color: #294861;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.albums-page .dropdown-filter label:hover,
+.albums-page .dropdown-filter label:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #294861;
+}
+
+.albums-page .dropdown-filter label input[type=checkbox],
+.albums-page .dropdown-filter label input[type=radio] {
+    margin-right: 0.5em;
+}
+
+.albums-page .dropdown-actions {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.albums-page .sort_dropdown {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: -24px;
+}
+
+.albums-page .row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.albums-page .album-card {
+    background: #e9f8fc;
+    box-shadow: 1px 1px 15px -8px #333;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: .5s ease;
+    margin-top: 30px;
+}
+
+.albums-page .album-card:hover {
+    box-shadow: 1px 1px 25px -8px #333;
+    transform: scale(1.04);
+    width: 100%;
+}
+
+.albums-page .card-title {
+    color: #294861;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 15px;
+    text-transform: capitalize;
+
+}
+
+
+.albums-page .card-image {
+    width: 100%;
+    height: 280px;
+    background-image: url(../images/program.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.albums-page .card-image img {
+    width: 100%;
+    height: 280px;
+}
+
+.noresults {
+    background-color: transparent !important;
+    border: #fff !important;
+    color: #294861 !important;
+    cursor: default !important;
+    font-size: 18px !important;
+}
+
+.noresults:focus{
+    box-shadow: none !important;
+}

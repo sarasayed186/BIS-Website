@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admission-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.9),
+            rgba(41, 72, 97, 0.9)),
+        url(../images/admission.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.admission-cover p {
+    font-size: 65px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.admission-sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.admission-sec .heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #294861;
+}
+
+@media (max-width: 62rem) {
+    .admission-sec .heading {
+        padding-top: 20px;
+    }
+}
+
+.admission-sec button,
+.admission-sec .button {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+    background-color: #294861;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.admission-sec button:hover,
+.admission-sec .button:hover {
+    background-color: #3e5a71;
+}
+
+.admission-sec button:hover:before,
+.admission-sec button:hover:after,
+.admission-sec .button:hover:before,
+.admission-sec .button:hover:after {
+    color: #fea002;
+}
+
+.admission-sec button:after,
+.admission-sec button:before,
+.admission-sec .button:after,
+.admission-sec .button:before {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.admission-sec .tabs {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.admission-sec .tabs .tab {
+    margin-bottom: 1px;
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .tab {
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+}
+
+.admission-sec .tabs .tab .tab-toggle {
+    padding: 1rem 4rem 1rem 2rem;
+    position: relative;
+    outline: none;
+    width: 100%;
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .tab .tab-toggle {
+        text-align: left;
+    }
+}
+
+.admission-sec .tabs .tab .tab-toggle:after {
+    content: "▼";
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 50%;
+    -webkit-transform: rotate(0deg) translateY(-50%);
+    -moz-transform: rotate(0deg) translateY(-50%);
+    -ms-transform: rotate(0deg) translateY(-50%);
+    -o-transform: rotate(0deg) translateY(-50%);
+    transform: rotate(0deg) translateY(-50%);
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .tab .tab-toggle:after {
+        -webkit-transform: rotate(-90deg) translateX(50%);
+        -moz-transform: rotate(-90deg) translateX(50%);
+        -ms-transform: rotate(-90deg) translateX(50%);
+        -o-transform: rotate(-90deg) translateX(50%);
+        transform: rotate(-90deg) translateX(50%);
+    }
+}
+
+.admission-sec .tabs .tab .tab-toggle.active {
+    color: #294861;
+    background-color: #fff;
+    cursor: default;
+}
+
+.admission-sec .tabs .tab .tab-toggle.active:after {
+    color: #294861;
+    -webkit-transform: rotate(180deg) translateY(50%);
+    -moz-transform: rotate(180deg) translateY(50%);
+    -ms-transform: rotate(180deg) translateY(50%);
+    -o-transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg) translateY(50%);
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .tab .tab-toggle.active:after {
+        -webkit-transform: rotate(-90deg) translateX(50%) translateY(0);
+        -moz-transform: rotate(-90deg) translateX(50%) translateY(0);
+        -ms-transform: rotate(-90deg) translateX(50%) translateY(0);
+        -o-transform: rotate(-90deg) translateX(50%) translateY(0);
+        transform: rotate(-90deg) translateX(50%) translateY(0);
+        right: 1rem;
+    }
+}
+
+.admission-sec .tabs .content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #efefef;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .content {
+        max-height: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 75%;
+        padding: 2rem;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.admission-sec .tabs .content.active {
+    max-height: none;
+}
+
+@media screen and (min-width: 62rem) {
+    .admission-sec .tabs .content.active {
+        max-height: none;
+        opacity: 1;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+}
+
+.admission-sec ol {
+    margin: 0 0 1em 0;
+    padding: 0;
+    counter-reset: li;
+    list-style: none;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.admission-sec ol li {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-left: 50px;
+    min-height: 35px;
+    margin: 10px 0px;
+    padding-top: 4px;
+    font-weight: normal;
+}
+
+.admission-sec ol li:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #fea002;
+    background-color: #fea002;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    content: counter(li);
+    counter-increment: li;
+}

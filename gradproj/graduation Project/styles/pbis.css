@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.7),
+            rgba(41, 72, 97, 0.7)),
+        url(../images/cover1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about-cover p {
+    font-size: 65px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.who-sec {
+    background-color: #fff;
+}
+
+.who-sec .container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.who-sec .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-sec .container .title {
+    text-align: center;
+    font-size: 40px;
+    color: #294861;
+    font-weight: 600;
+}
+
+.who-sec .container .title span {
+    color: #fea002;
+}
+
+.who-sec p {
+    color: #666;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 27px;
+    padding-right: 30px;
+}
+
+.who-sec .img-fluid img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+}
+
+
+.about-overlapping section {
+    background: #e9f8fc;
+
+}
+
+.about-overlapping .opposite-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/pattern-background.png);
+    background-position: center;
+}
+
+.about-overlapping .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-overlapping .left {
+    width: 40%;
+    height: 250px;
+    border-radius: 4px;
+    background-color: rgb(41, 72, 97);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+.about-overlapping .opposite-sec .left {
+    justify-content: center;
+}
+
+.about-overlapping .right {
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+    border-radius: 4px;
+    margin-left: -120px;
+}
+
+.about-overlapping .opposite-sec .right {
+    margin-right: -120px;
+    margin-left: 0;
+    z-index: 2;
+}
+
+.about-overlapping .right h1 {
+    color: #294861;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-overlapping .opposite-sec .right h1 {
+    font-size: 38px;
+}
+
+.about-overlapping .right p {
+    color: #666;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-overlapping .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .about-overlapping .opposite-sec .container {
+        flex-direction: column-reverse;
+    }
+
+    .about-overlapping .left {
+        width: 100%;
+    }
+
+    .about-overlapping .opposite-sec .left {
+        justify-content: start;
+    }
+
+    .about-overlapping .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about-overlapping .opposite-sec .right {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-overlapping .opposite-sec .right h1 {
+        font-size: 35px;
+    }
+
+    .who-sec .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-overlapping .right {
+        padding: 20px;
+    }
+
+    .about-overlapping .right h1 {
+        font-size: 35px;
+    }
+
+    .about-overlapping .opposite-sec .right h1 {
+        font-size: 32px;
+    }
+}
+
+.who-sec ol {
+    counter-reset: li;
+    list-style: none;
+    font-size: 18px;
+    color: #666;
+}
+
+.who-sec ol li {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-left: 50px;
+    min-height: 35px;
+    margin: 10px 0px;
+    padding-top: 4px;
+    font-weight: normal;
+}
+
+.who-sec ol li:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #fea002;
+    background-color: #fea002;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    content: counter(li);
+    counter-increment: li;
+}

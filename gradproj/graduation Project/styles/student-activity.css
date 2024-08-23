@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.student-activity-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/activity-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.student-activity-cover p {
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 120px;
+}
+
+
+.activity-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(255, 255, 255, .6),
+            rgb(255, 255, 255, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+}
+
+.activity-sec .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.activity-sec .student-activity-img {
+    background: url(../images/enactus\ bis.jpg) no-repeat center / cover;
+}
+
+.activity-sec .left {
+    width: 40%;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 20px -10px #666;
+}
+
+.activity-sec .right {
+    width: 60%;
+    height: auto;
+    background-color: transparent;
+    border: #294861 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px 50px 50px;
+    border-radius: 4px;
+    margin-right: -100px;
+    box-shadow: 1px 1px 20px -10px #666;
+    z-index: 1;
+}
+
+.activity-sec .right h1 {
+    text-transform: capitalize;
+    color: #294861;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.activity-sec .right p {
+    color: #666;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .activity-sec .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .activity-sec .left {
+        width: 100%;
+    }
+
+    .activity-sec .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -150px;
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .activity-sec .right {
+        padding: 30px;
+    }
+
+    .activity-sec .right h1 {
+        font-size: 35px;
+    }
+}
+
+.student-activity-sec {
+    background: #e9f8fc;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.student-activity-sec .row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.student-activity-sec .container .txt {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: #294861;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.student-activity-sec .container .txt span {
+    color: #fea002;
+}
+
+.student-activity-sec .container .txt::after,
+.student-activity-sec .container .txt::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+    content: "";
+    right: 45px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.student-activity-sec .container .txt::before {
+    background-color: #fea002;
+    left: 45px;
+    width: 90px;
+}
+
+.student-activity-sec .activity-card .tile {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px -8px #333;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.student-activity-sec .activity-card .overlay {
+    background-color: rgba(41, 72, 97, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.student-activity-sec .activity-card .activity-logo {
+    width: 100%;
+    height: 280px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+    transform: scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.student-activity-sec .activity-card .tile:hover .activity-logo,
+.student-activity-sec .activity-card .tile:focus .activity-logo {
+    transform: scale(1.1);
+}
+
+.student-activity-sec .activity-card .activity-title {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.student-activity-sec .activity-card .activity-title:hover {
+    text-decoration: underline;
+}

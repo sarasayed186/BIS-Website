@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(233, 248, 252, .6),
+            rgb(233, 248, 252, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.academicspages {
+    padding-bottom: 100px;
+}
+
+.academic-calendar {
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/academic-calendar.jpg);
+}
+
+.lectures-sechedule {
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/close-up-glasses-annual-summary.jpg);
+}
+
+.halls-schedule {
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/halls.jpg);
+}
+
+.exams-sechedule {
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/exams-schedules.jpg);
+}
+
+.lvl1-guideline {
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/guideline.jpg);
+}
+
+.schedule-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.schedule-cover p {
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 120px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.iframe-section .schedule-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: #294861;
+    text-transform: capitalize;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.schedule-iframe-master {
+    max-width: 900px;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    -webkit-box-shadow: 4px 4px 14px #606060;
+    -moz-box-shadow: 4px 4px 14px #606060;
+    box-shadow: 4px 4px 14px #606060;
+}
+
+.responsive-iframe-wrapper {
+    position: relative;
+    height: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    padding-bottom: 100%;
+}
+
+.responsive-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.academicspages .load-more-btn {
+    color: #fff;
+    background: #294861;
+    border-color: #294861;
+    padding: 7px 20px 8px 20px;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.academicspages .load-more-btn:hover {
+    color: #294861;
+    background-color: #fff;
+    border-color: #294861;
+}
+
+.noresults {
+    background-color: transparent !important;
+    border: #fff !important;
+    color: #294861 !important;
+    cursor: default !important;
+    font-size: 18px !important;
+}
+
+.noresults:focus{
+    box-shadow: none !important;
+}

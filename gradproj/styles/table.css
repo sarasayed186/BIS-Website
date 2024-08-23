@@ -1,0 +1,109 @@
+.bis tbody th {
+    color: black;
+}
+
+.bis thead th {
+    color: white;
+}
+
+.bis .img-table {
+    max-height: 100px;
+    max-width: 100%;
+    opacity: 1.0;
+}
+
+.bis .img-table:hover {
+    opacity: 0.5;
+}
+
+.bis .row {
+    color: #294861;
+    /* margin-left: 1px; */
+}
+
+.bis .color {
+    background-color: #294861;
+}
+
+.bis .btn-info {
+    background-color: #294861;
+    border-color: white;
+    font-weight: 600;
+}
+
+.bis .btn-info:hover {
+    background-color: #e9f8fc;
+    color: #294861;
+    border-color: #e9f8fc;
+    font-weight: 600;
+}
+
+.bis .btn-info-box-one {
+    background-color: #294861;
+    border-color: #294861;
+    border-color: white;
+    font-weight: 600;
+}
+
+.bis .btn-info-box-two {
+    background-color: #294861;
+    border-color: #294861;
+    border-color: white;
+    font-weight: 600;
+    /* margin-left: 30px; */
+}
+
+.bis .btn-info-Gallery {
+    background-color: #fea002;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.bis .btn-info-Gallery:hover {
+    background-color: #faeeda;
+    font-weight: 600;
+    color: #fea002;
+}
+
+.bis .btn-danger {
+    font-weight: 600;
+}
+
+.bis .btn-danger:hover {
+    background-color: rgb(255, 210, 210);
+    font-weight: 600;
+    color: #a60000;
+    border-color: rgb(255, 210, 210);
+}
+
+.pra {
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 12.5px;
+    font-family: 'Nabla', cursive;
+    /* margin: 30px; */
+}
+
+.bis .td-pra {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+}
+
+.bis .td-pra:hover {
+    color: #fea002;
+}
+
+.bis .import-sec {
+    background-color: #d6edff;
+    margin-top: 70px;
+}
+
+.bis .display-4 {
+    color: #fea002;
+    font-size: 45px;
+}
+
+.bis .btn-infoo {
+    color: whitesmoke;
+}

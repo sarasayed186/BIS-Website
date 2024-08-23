@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(255, 255, 255, .6),
+            rgb(255, 255, 255, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.albums-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/album-cover.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    color: #fff;
+}
+
+.albums-cover p {
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.album-head-sec {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.album-head-sec .container .text h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 26px;
+    color: #294861;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.album-head-sec .container .text h2 p {
+    display: block;
+    line-height: 1.5em;
+    padding-top: 10px;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: #7c8184;
+}
+
+.album-head-sec .container .text h2::after,
+.album-head-sec .container .text h2::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+    content: "";
+    right: 45px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.album-head-sec .container .text h2::before {
+    background-color: #fea002;
+    left: 45px;
+    width: 90px;
+}
+
+#gallery {
+    margin-top: 20px;
+    margin-bottom: 95px;
+}
+
+#gallery .row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery .text-left {
+    color: #294861;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -2px;
+}
+
+#gallery .img-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+
+#gallery .img-wrapper img {
+    width: 100%;
+    height: 300px;
+}
+
+#gallery .img-overlay {
+    background: rgba(41, 72, 97, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+#gallery .img-overlay i {
+    color: #fff;
+    font-size: 3em;
+}
+
+#gallery .img-overlay .img-date {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    width: 200px;
+    color: #fff;
+}
+
+#gallery .img-overlay .img-date i,
+#gallery .img-overlay .img-date small {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#gallery #overlay {
+    background: rgba(41, 72, 97, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#gallery #overlay img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #overlay img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #gallery #overlay img {
+        width: 50%;
+    }
+}
+
+#gallery #nextButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    cursor: pointer;
+}
+
+#gallery #nextButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #nextButton {
+        font-size: 3em;
+    }
+}
+
+#gallery #prevButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    cursor: pointer;
+}
+
+#gallery #prevButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #prevButton {
+        font-size: 3em;
+    }
+}
+
+#gallery #exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#gallery #exitButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #exitButton {
+        font-size: 3em;
+    }
+}
+
+#gallery .load-more-btn {
+    color: #fff;
+    background: #294861;
+    border-color: #294861;
+    padding: 7px 20px 8px 20px;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+}
+
+#gallery .load-more-btn:hover {
+    color: #294861;
+    background-color: #fff;
+    border-color: #294861;
+}
+
+#gallery .load-more-btn {
+    margin-top: 30px;
+}
+
+.noresults {
+    background-color: transparent !important;
+    border: #fff !important;
+    color: #294861 !important;
+    cursor: default !important;
+    font-size: 18px !important;
+}
+.noresults:focus{
+    box-shadow: none !important;
+}

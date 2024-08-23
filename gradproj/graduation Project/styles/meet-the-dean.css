@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(233, 248, 252, .6),
+      rgb(233, 248, 252, .6)),
+    url(../images/pattern-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dean-sec {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #294861;
+}
+
+.dean-sec .section-title {
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.dean-sec .container {
+  background-color: #fff;
+  box-shadow: 1px 1px 15px -6px #989898;
+  border-radius: .8rem;
+}
+
+.name {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fea002;
+}
+
+.dean-sec .title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.dean-sec .img-container img {
+  width: 350px;
+  height: 300px;
+  border-radius: .8rem;
+}
+
+.dean-sec .info h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #fea002;
+}
+
+.dean-sec .info p {
+  font-size: 18px;
+  border-left: #fea002 solid 3px;
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+.word-sec {
+  margin: 70px auto;
+  padding: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.word-sec h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fea002;
+  text-transform: capitalize;
+}
+
+.word-sec .quote {
+  border: 2px solid #fea002;
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border-radius: .8rem;
+}
+
+.word-sec .quote::before,
+.word-sec .quote::after {
+  position: absolute;
+  font-size: 100px;
+  background: #f2fbfe;
+  display: block;
+  height: 30px;
+  width: 45px;
+  text-align: center;
+  color: #fea002;
+}
+
+.word-sec .quote::before {
+  content: "“";
+  top: -30px;
+  left: 20px;
+  line-height: 100px;
+}
+
+.word-sec .quote::after {
+  content: "”";
+  bottom: -25px;
+  right: 20px;
+  line-height: 60px;
+}
+
+.word-sec .quote .txt {
+  font-size: 18px;
+  margin: 10px 0px;
+  color: #294861;
+}
+
+@media only screen and (max-width: 765px) {
+  .dean-sec .info h3 {
+    margin-top: 50px;
+  }
+}

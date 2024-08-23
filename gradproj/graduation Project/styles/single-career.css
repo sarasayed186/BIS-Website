@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+<div class="read-more">
+<a class="read-more-1" href="<?php echo $data['careerLink']; ?>">
+    <i class="fa fa-tasks"></i>Apply Now
+</a>
+</div> */
+
+
+body {
+    background: linear-gradient(rgb(255, 255, 255, .6),
+            rgb(255, 255, 255, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apply-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/careers.jpg);
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+}
+
+.apply-cover p {
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.singe-career-sec {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.singe-career-sec .details i {
+    font-size: 17px;
+    color: #fea002;
+    padding-right: 8px;
+}
+
+.singe-career-sec .details p {
+    color: #666;
+    text-transform: capitalize;
+}
+
+.singe-career-sec a {
+    position: relative;
+    font-weight: 600;
+    color: #666;
+    text-decoration: none;
+}
+
+.singe-career-sec a i {
+    padding-right: 15px;
+}
+
+.singe-career-sec a:hover {
+    color: #fea002;
+}
+
+.singe-career-sec .read-more-1::after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    padding-left: 8px;
+}
+
+.singe-career-sec .read-more-1:hover::after {
+    transform: translate(3px, 0);
+    transition: all 0.1s ease-in;
+}
+
+
+.singe-career-sec .job-title {
+    font-weight: 600;
+    color: #294861;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.singe-career-sec .career-desc {
+    font-size: 17px;
+    max-height: fit-content;
+    color: #666;
+}
+
+.singe-career-sec .career-img {
+    overflow: hidden;
+    background-image: url(../images/program.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.singe-career-sec .career-img img {
+    width: 100%;
+    height: 350px;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+}
+
+.singe-career-sec .career-img img:hover {
+    transform: scale(1.05);
+    width: 100%;
+}
+

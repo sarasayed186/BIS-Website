@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: linear-gradient(rgb(233, 248, 252, .6),
+			rgb(233, 248, 252, .6)),
+		url(../images/pattern-background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.get-in-touch-sec {
+	padding-top: 160px;
+	padding-bottom: 50px;
+}
+
+.section-contact {
+	padding: 80px;
+	background-color: #fff;
+	box-shadow: 1px 1px 15px -6px #989898;
+}
+
+.section-contact .header-section .title {
+	position: relative;
+	margin-bottom: 17px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 50px;
+	color: #294861;
+}
+
+.section-contact .header-section .description {
+	color: #fea002;
+	font-weight: 600;
+}
+
+.section-contact .header-section .big-title {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%, 70%);
+	font-size: 120px;
+	font-weight: 700;
+	opacity: 0.1;
+}
+
+.section-contact .form-contact .single-input {
+	position: relative;
+	margin-top: 40px;
+}
+
+.section-contact .form-contact .single-input i {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	color: #fea002;
+}
+
+.section-contact .form-contact .single-input input,
+.section-contact .form-contact .single-input textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #294861;
+	padding-left: 50px;
+	padding-bottom: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.section-contact .form-contact .single-input input:focus,
+.section-contact .form-contact .single-input textarea:focus {
+	outline: none;
+}
+
+.section-contact .form-contact .single-input input::placeholder,
+.section-contact .form-contact .single-input textarea::placeholder {
+	color: rgba(7, 57, 92, 0.3);
+}
+
+.section-contact .form-contact .single-input textarea {
+	height: 150px;
+	min-height: 50px;
+	max-height: 250px;
+}
+
+.section-contact .form-contact .submit-input input {
+	margin-top: 40px;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: #294861;
+	border: 2px solid #294861;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.section-contact .form-contact .submit-input input:hover {
+	color: #294861;
+	background-color: #fff;
+	border-color: #294861;
+}
+
+.map_sec {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.map_sec .map_inner h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 35px;
+	color: #294861;
+	text-align: center
+}
+
+.map_sec .map_bind {
+	background-color: #fff;
+	margin-top: 25px;
+	overflow: hidden;
+	box-shadow: 1px 1px 15px -6px #989898;
+	padding: 10px;
+	padding-bottom: 5px;
+}
+
+
+@media (max-width: 575.99px) {
+
+	.section-contact .header-section .title {
+		font-size: 40px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 80px;
+	}
+
+	.section-contact .header-section .description {
+		font-size: 14px;
+	}
+
+	.map_sec .map_inner h3 {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+	.section-contact {
+		padding: 80px 60px;
+	}
+
+	.section-contact .header-section .title {
+		font-size: 45px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 100px;
+	}
+
+	.map_sec .map_inner h3 {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+	.section-contact {
+		padding: 80px 60px;
+	}
+
+	.section-contact .header-section .title {
+		font-size: 45px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 100px;
+	}
+
+	.map_sec .map_inner h3 {
+		font-size: 30px;
+	}
+}

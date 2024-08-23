@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(255, 255, 255, .6),
+            rgb(255, 255, 255, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apply-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/careers.jpg);
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+}
+
+.apply-cover p {
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.career-cards {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.career-cards .page-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    color: #294861;
+}
+
+.career-cards .page-title span {
+    color: #fea002;
+}
+
+.career-cards .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.career-cards .career-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.career-cards .career-card .card {
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.career-cards .card .card-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+    background-image: url(../images/program.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.career-cards .card .card-image img {
+    height: 240px;
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+    background-image: url(../images/program.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.career-cards .card .card-image img:hover {
+    transform: scale(1.1);
+    width: 100%;
+}
+
+.career-cards .card .card-body {
+    background: #fff;
+}
+
+.career-cards .card .card-body h5 {
+    font-weight: 600;
+    color: #294861;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.career-cards .card .card-body i {
+    font-size: 17px;
+    color: #fea002;
+    padding-right: 8px;
+}
+
+.career-cards .card .card-body p {
+    color: #666;
+    text-transform: capitalize;
+}
+
+.career-cards .card .card-body a {
+    position: relative;
+    font-weight: 600;
+    color: #666;
+    text-decoration: none;
+}
+
+.career-cards .card .card-body a i {
+    padding-right: 15px;
+}
+
+.career-cards .card .card-body a:hover {
+    color: #fea002;
+}
+
+.career-cards .read-more-1::after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    padding-left: 8px;
+}
+
+.career-cards .read-more-1:hover::after {
+    transform: translate(3px, 0);
+    transition: all 0.1s ease-in;
+}
+
+.career-cards .load-more-btn {
+    color: #fff;
+    background: #294861;
+    border-color: #294861;
+    padding: 7px 20px 8px 20px;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.career-cards .load-more-btn:hover {
+    color: #294861;
+    background-color: #fff;
+    border-color: #294861;
+}
+
+.noresults {
+    background-color: transparent !important;
+    border: #fff !important;
+    color: #294861 !important;
+    cursor: default !important;
+    font-size: 18px !important;
+}
+
+.noresults:focus {
+    box-shadow: none !important;
+}

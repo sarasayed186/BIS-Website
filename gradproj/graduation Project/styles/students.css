@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-students-sec {
+    padding-top: 160px;
+    padding-bottom: 60px;
+    background-color: #e9f8fc;
+}
+
+.top-students-sec .sec-title h2 {
+    position: relative;
+    font-weight: 600;
+    font-size: 35px;
+    color: #294861;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+.top-students-sec .sec-title h2::after,
+.top-students-sec .sec-title h2::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+    content: "";
+    right: 45px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.top-students-sec .sec-title h2::before {
+    background-color: #fea002;
+    left: 45px;
+    width: 90px;
+}
+
+.top-students-sec .container {
+    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.top-students-sec .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-students-sec .student-card {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.top-students-sec .student-card .card {
+    background: #fff;
+    box-shadow: 1px 1px 15px -8px #333;
+}
+
+.top-students-sec .student-card .student-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    background-image: url(../images/avatar-placeholder.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.top-students-sec .student-card .student-image img {
+    height: 220px;
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+}
+
+.top-students-sec .student-card .student-image img:hover {
+    transform: scale(1.1);
+    width: 100%;
+}
+
+.top-students-sec .student-card .rank {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fea002;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.top-students-sec .student-card .student-lvl {
+    position: absolute;
+    bottom: 0;
+    ;
+    left: 0;
+    background: #fff;
+    padding: 4px;
+    font-size: 17px;
+    width: 100px;
+    font-weight: 600;
+    text-align: center;
+    color: #294861;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.top-students-sec .student-card .student-name {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    color: #294861;
+    text-align: center;
+}
+
+.top-students-sec .student-card .student-gpa {
+    color: #7a7a7a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.students-all-sec section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/pattern-background.png);
+    background-position: center;
+}
+
+.students-all-sec .achieve-sec {
+    background: #e9f8fc;
+}
+
+.students-all-sec .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.student-activity-img {
+    background: url(../images/enactus\ bis.jpg) no-repeat center / cover;
+}
+
+.student-achieve-img {
+    background: url(../images/achieve-img.jpeg) no-repeat center / cover;
+}
+
+.bis-portal-img {
+    background: url(../images/cover4.jpg) no-repeat center / cover;
+}
+
+.students-all-sec .left {
+    width: 50%;
+    height: 420px;
+    border-radius: 4px;
+}
+
+.students-all-sec .achieve-sec .left {
+    height: 500px; 
+}
+
+.students-all-sec .right {
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 100px;
+    border-radius: 4px;
+    margin-left: -150px;
+}
+
+.students-all-sec .achieve-sec .right {
+    margin-right: -150px;
+    margin-left: 0;
+    z-index: 2;
+}
+
+.students-all-sec .right h1 {
+    color: #294861;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.students-all-sec .achieve-sec .right h1 {
+    font-size: 38px;
+}
+
+.students-all-sec .right p {
+    color: #666;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.students-all-sec .right .know-more-btn,
+.top-students-sec .know-more-btn {
+    color: #fff;
+    background: #294861;
+    border-color: #294861;
+    padding: 7px 20px 8px 20px;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    font-size: 17px;
+    font-weight: 600;
+    height: 40px;
+}
+
+.students-all-sec .right .know-more-btn:hover,
+.top-students-sec .know-more-btn:hover {
+    color: #294861 !important;
+    background-color: #fff;
+    border-color: #294861;
+}
+
+@media only screen and (max-width: 1200px) {
+    .students-all-sec .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .students-all-sec .achieve-sec .container {
+        flex-direction: column-reverse;
+    }
+
+    .students-all-sec .left {
+        width: 100%;
+    }
+
+    .students-all-sec .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+
+    .students-all-sec .achieve-sec .right {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .students-all-sec .achieve-sec .right h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .students-all-sec .right {
+        padding: 30px;
+    }
+
+    .students-all-sec .right h1 {
+        font-size: 35px;
+    }
+
+    .students-all-sec .achieve-sec .right h1 {
+        font-size: 32px;
+    }
+}

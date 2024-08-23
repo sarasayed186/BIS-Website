@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(233, 248, 252, .6),
+            rgb(233, 248, 252, .6)),
+        url(../images/pattern-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.events-cover {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(41, 72, 97, 0.8),
+            rgba(41, 72, 97, 0.8)),
+        url(../images/311977094_6636570313043025_6068127090752669560_n.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    color: #fff;
+}
+
+.events-cover p {
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+
+.singe-event-sec {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.singe-event-sec .event-date i,
+.singe-event-sec .event-date small {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fea002;
+    text-transform: capitalize;
+}
+
+.singe-event-sec .event_heading {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+    color: #294861;
+}
+
+.singe-event-sec .event-desc {
+    font-size: 17px;
+    max-height: fit-content;
+}
+
+.singe-event-sec .event-img {
+    background-image: url(../images/program.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+}
+
+.singe-event-sec .event-img img {
+    width: 100%;
+    height: 350px;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+}
+
+.singe-event-sec .event-img img:hover {
+    transform: scale(1.1);
+    width: 100%;
+}
+
+.singe-event-sec .event-img .bottom-right-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fea002;
+    width: 150px;
+    padding: 3px 10px 3px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#gallery {
+    margin-top: 20px;
+    margin-bottom: 95px;
+}
+
+#galley .row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery .img-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+
+#gallery .img-wrapper img {
+    width: 100%;
+    height: 300px;
+}
+
+#gallery .img-overlay {
+    background: rgba(41, 72, 97, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+#gallery .img-overlay i {
+    color: #fff;
+    font-size: 3em;
+}
+
+#gallery #overlay {
+    background: rgba(41, 72, 97, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#gallery #overlay img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #overlay img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #gallery #overlay img {
+        width: 50%;
+    }
+}
+
+#gallery #nextButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    cursor: pointer;
+}
+
+#gallery #nextButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #nextButton {
+        font-size: 3em;
+    }
+}
+
+#gallery #prevButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    cursor: pointer;
+}
+
+#gallery #prevButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #prevButton {
+        font-size: 3em;
+    }
+}
+
+#gallery #exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.9s;
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#gallery #exitButton:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    #gallery #exitButton {
+        font-size: 3em;
+    }
+}
